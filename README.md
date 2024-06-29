@@ -2,7 +2,7 @@
 
 ## Trang User
 
-> **[Mint-Cosmectis-User](http://localhost/Mint-Cosmetics/index.php)**
+> Link trang user: **http://localhost/Mint-Cosmetics/index.php**
 
 ```
 Username: test@gmail.com
@@ -11,7 +11,7 @@ Password: 09072003
 
 ## Trang Admin
 
-> **[Mint-Cosmectis-Admin](http://localhost/Mint-Cosmetics/admin/index.php)**
+> Link trang admin: **http://localhost/Mint-Cosmetics/admin/index.php**
 
 ```
 Username: admin@gmail.com
