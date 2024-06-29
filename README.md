@@ -18,7 +18,7 @@ Username: admin@gmail.com
 Password: 09072003
 ```
 
-- Trước khi tải cần import DATABASE file `mintcosmetics.sql`
+- Trước khi tải cần import DATABASE file `mintcosmetics.sql` vào MySQL của xampp
 
 
 ```php
