@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root {
+    --pink: #e84393;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+section {
+    padding: 4rem 5%;
+}
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span {
+    color: var(--pink);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 4rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background-color: var(--pink);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    width: 40%;
+    font-weight: bolder;
+}
+
+header .navbar a {
+    font-size: 1.75rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover {
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: var(--pink);
+    font-weight: bolder;
+    transition: .1s;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(0, 0, 0, .3);
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #383030;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    font-family: "Poetsen One", sans-serif;
+    color: rgb(225, 137, 152);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.75rem;
+    color: #000000;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+  /* Tạo dòng chữ chạy ngang */
+.homeBannerMarquee {
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    background: #FFE4E1;
+    color: #4e4a4a;
+    margin-top: -20px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+.homeBannerMarquee-container {
+    line-height: 48px;
+}
+.marquee {
+    
+    display: inline-block;
+    padding-left: 50%;
+    animation: marquee 11s linear infinite;
+    font-size: 2rem;
+
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}  
+/* Kết thúc dòng chữ chạy ngang */
+.funfact-area .row {
+    justify-content: space-around;
+}
+
+.funfact-item {
+    background-color: #fff6f5;
+    border: 3px solid #ebf6b6;
+    border-radius: 30px;
+    text-align: center;
+    padding: 22px 44px 30px;
+}
+
+.funfact-item .icon {
+    border-bottom: 1px solid #ffb0b0;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+.funfact-item .icon img {
+    width: 100px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.funfact-item .funfact-number {
+    color: #333e48;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.funfact-item .funfact-title {
+    color: #333e48;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+   
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    gap: 10px; /* Khoảng cách giữa hai ảnh */
+}
+
+.image {
+    width: 100%; 
+    max-width: 48%; /* Đảm bảo hai ảnh không vượt quá 100% khi cộng lại */
+    border-radius: 10px; /* thêm bo góc cho ảnh */
+    padding-bottom: 20px;  /* khoảng cách giữa ảnh và chữ */
+}
+.about .row .img-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .img-container img {
+    width: 600px;
+    height: 590px;
+    border: 1.5rem solid #ffffff;
+    border-radius: 6rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    object-fit: cover;
+}
+
+.about .row .img-container h3 {
+    position: absolute;
+    top: 23%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: #10d8b1;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+
+}
+.about .row .content h2 {
+    font-size: 3rem;
+    color: #f583bc;
+    text-align: center;
+}
+.about .row .content h3 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.about .row .content p {
+    font-size: 1.7rem;
+    color: #333e48;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+/* Ảnh gif product */
+ /* End */
+.section-space .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-category-item {
+    border-radius: 10px;
+    /* background-color: #dcffd2; */
+    display: block;
+    padding: 45px 15px 30px;
+    height: 220px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+
+}
+
+.product-category-item .icon {
+    margin-bottom: 43px;
+
+}
+
+.product-category-item .title {
+    color: #1d4a21;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 17px;
+
+}
+
+.product-category-item .flag-new {
+    position: absolute;
+    right: 10px;
+    top: -35;
+    background-color: #ff6565;
+    border-radius: 50px;
+    color: #eee;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 22px 1px 22px 4px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .2rem solid rgba(0, 0, 0, .1);
+}
+
+.review .box-container .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+
+}
+
+.review .box-container .box .starts i {
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.review .box-container .box p {
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.review .box-container .box .user span {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .2rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus {
+    border-color: var(--pink);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+
+.footer .box-container .box img {
+    margin-top: .1rem;
+    width: 15%;
+    cursor: pointer;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .2rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span {
+    color: var(--pink);
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+
+    background-color: transparent;
+    color: #333;
+    font-size: 2.5rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: var(--pink);
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+
+    background-color: transparent;
+    color: #333;
+    font-size: 2.5rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: var(--pink);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    margin: 0;
+    padding: 0;
+    left: 0%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

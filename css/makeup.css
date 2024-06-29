@@ -1,0 +1,139 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+a {
+    text-decoration: none;
+}
+
+/* shop area start */
+.shop_toolbar_wrapper {
+    border: 1px solid #ddd;
+    padding: 15px 10px;
+    margin: 50px 0px 50px;
+    border-radius: 5px;
+}
+
+.shop_area {
+    margin-bottom: 30px;
+}
+
+.niceselect_option select {
+    padding: 10px;
+    outline: none;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+}
+
+.product_thumb .add_to_cart {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.strikethrough {
+    margin: auto;
+    width: 500px;
+    border-top: 3px solid #e84393;
+    margin-top: 10px;
+}
+
+.single_product {
+    overflow: hidden;
+    padding: 20px 35px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background: #ffffff;
+    display: inline-block;
+}
+
+.single_product:hover {
+    border-color: #ebebeb;
+}
+
+.single_product:hover .add_to_cart {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single_product .product_thumb {
+    position: relative;
+}
+
+.single_product:hover .product_name a {
+    color: #e84393;
+}
+
+.product_thumb .label_sale {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: #ffffff;
+    background: #e84393;
+    font-size: 13px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    right: -10px;
+}
+
+.product_thumb .add_to_cart {
+    position: absolute;
+    bottom: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.product_thumb .add_to_cart a {
+    display: none;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 40px;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.5s ease;
+    background: #e84393;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product_content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product_content .price_box {
+    margin-bottom: 15px;
+}
+
+.price_box .old_price {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.price_box .current_price {
+    color: #e84393;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product_name a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+/* shop area end */
