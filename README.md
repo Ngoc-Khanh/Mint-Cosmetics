@@ -1,27 +1,27 @@
 # Tài khoản test trang web
 
-### Trang User
+## Trang User
 
-**[Mint-Cosmectis-User](http://localhost/Mint-Cosmetics/index.php)**
+> Link trang user: **http://localhost/Mint-Cosmetics/index.php**
 
 ```
 Username: test@gmail.com
 Password: 09072003
 ```
 
-### Trang Admin
+## Trang Admin
 
-**[Mint-Cosmectis-Admin](http://localhost/Mint-Cosmetics/admin/index.php)**
+> Link trang admin: **http://localhost/Mint-Cosmetics/admin/index.php**
 
 ```
 Username: admin@gmail.com
 Password: 09072003
 ```
 
-- Trước khi tải cần import DATABASE file `mintcosmetics.sql`
+- Trước khi tải cần import DATABASE file `mintcosmetics.sql` vào MySQL của xampp
 
 
-```
+```php
 // File kết nối cơ sở dữ liêu từ php với sql
 // Đường dẫn file "lib/DB.php"
 
