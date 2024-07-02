@@ -53,8 +53,8 @@
                                         <!-- Product Description -->
                                         <div class="product-description">
                                             <div class="price_box" style="text-align: center;">
-                                                <span class="old_price"><?php echo 200000+$sanpham["don_gia"]; ?> đ</span>
-                                                <span class="current_price"><?php echo $sanpham["don_gia"]; ?> đ</span>
+                                                <span class="old_price"><?php echo number_format(200000+$sanpham["don_gia"]); ?> đ</span>
+                                                <span class="current_price"><?php echo number_format($sanpham["don_gia"]); ?> đ</span>
                                             </div>
                                             <p style="text-align: center; font-size: 20px; font-weight: 600;"><?php echo $sanpham["ten_san_pham"]; ?></p>
 
